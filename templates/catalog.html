@@ -1,40 +1,31 @@
-{% extends 'basemodified.html' %}
+{% extends 'basecatalog.html' %}
 {% block title %}
     Каталог Альметьевские двери
 {% endblock %}
 
-{% block menu %}
-    <ul class="nav nav-tabs">
-        <li class="divider"></li>
-        <li class="nav-header">Прайслист:</li>
-        <li><a href="#lA" data-toggle="tab">Section 1</a></li>
-        <li><a href="#lB" data-toggle="tab">Section 2</a></li>
-        <li><a href="#lC" data-toggle="tab">Section 3</a></li>
-    </ul>
-
+{% block up_content %}
+    <div class="block_head">
+        Каталог
+    </div>
 {% endblock %}
-{% block content %}
-    {% block up_content %}
-        <div class="block_head">
-            Каталог
-        </div>
-    {% endblock %}
+
+{% block prise_content %}
     <div class="span3 well">
-        <a href="prise1">
-            <img src="../media/img/catDoor1.png" alt="Входных дверей">
+        <a href="prise-enter">
+            <img src="../media/img/catDoor1.png" alt="Входные двери">
 
             <p>Входных дверей</p></a>
     </div>
 
     <div class="span3 well">
-        <a href="prise2">
+        <a href="prise-parade">
             <img src="../media/img/catDoor2.png" alt="Парадные двери">
 
             <p>Парадные двери</p></a>
     </div>
 
     <div class="span3 well">
-        <a href="prise3">
+        <a href="prise-lattice">
             <img src="../media/img/catDoor3.png" alt="Решетки">
 
             <p>Решетки</p></a>

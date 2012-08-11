@@ -13,7 +13,9 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^$', direct_to_template, {'template': 'home.html'}),
     (r'^catalog$', direct_to_template, {'template': 'catalog.html'}),
-    (r'^prise1$', direct_to_template, {'template': 'prise.html'}),
+    (r'^prise-enter$', direct_to_template, {'template': 'prise_enter.html'}),
+    (r'^prise-parade$', direct_to_template, {'template': 'prise_parade.html'}),
+    (r'^prise-lattice$', direct_to_template, {'template': 'prise_lattice.html'}),
 
 )
 
