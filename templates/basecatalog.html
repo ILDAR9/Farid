@@ -3,7 +3,8 @@
 {% block menu %}
     <ul class="nav nav-list">
         <li class="active"><a href="/"><i class="icon-white icon-home"></i> Home</a></li>
-        <li><a href="#"><i class="icon-pencil"></i> цветовая гамма</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Цветовая гамма <i class="icon-pencil"></i></a></li>
         <li class="divider"></li>
         <li><a data-toggle="modal" href="#myModal">Контактные данные</a></li>
     </ul>
@@ -11,18 +12,26 @@
     <div id="myModal" class="modal hide fade" style="display: block; ">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">×</button>
-            <h3>Modal Heading</h3>
+            <h3>Контактные данные</h3>
         </div>
         <div class="modal-body">
-            <h4>Контактные данные</h4>
+            <div class="span12">
+                <div class="pull-left">
+                    <h2>Телефон</h2>
 
-            <h2>Телефон</h2>
-            <p></p>8 (917) <b>246-46-09</b><br> 8 (917) <b>927-48-74</b></p>
+                    <p>8 (917) <b>246-46-09</b><br> 8 (917) <b>927-48-74</b></p>
+                </div>
+                <div class="pull-right">
+                    <h2>Адресс</h2>
+
+                    <p>г.Альметьевск, ул. Зифы Балакиной, д.1в</p>
+                </div>
+            </div>
             <br>
-            <p>Магазин находится в самом центре города, в 150 метрах от здания Транснефти. Мы работаем без обеда
+            <p><span style="padding: 0px 10px;">&nbsp;</span>Магазин находится в самом центре города, в 150 метрах от здания Транснефти. Мы работаем без обеда
                 и выходных, с 9:00 до 21:00.</p>
             <img src="../media/img/map.bmp" alt="Центр города">
-            <a href="http://maps.yandex.ru/-/CVaG506C"><p style="color: #004ab3;">Карта</p></a>
+            <a href="http://maps.yandex.ru/-/CVaG506C"><u style="color: #004ab3;">Карта</u></a>
 
         </div>
         <div class="modal-footer">
@@ -34,11 +43,11 @@
     {% block up_content %}
         <div class="tabbable">
             <ul class="nav nav-tabs">
-                <li class="{% block active1 %}{% endblock %}"><a href="prise-enter" >Входные двери</a>
+                <li class="{% block active1 %}{% endblock %}"><a href="prise-enter">Входные двери</a>
                 </li>
                 <li class="{% block active2 %}{% endblock %}"><a href="prise-parade">Парадные
                     двери</a></li>
-                <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice" >Решетки</a>
+                <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice">Решетки</a>
                 </li>
             </ul>
         </div>
