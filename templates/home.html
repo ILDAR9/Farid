@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC>
+{% extends 'basemodified.html' %}
+
+{% block title %}
+    Альметьевск двери
+{% endblock title %}
+
+{% block script %}
+    <script type="text/javascript">
+        new Image().src = "";
+    </script>
+{% endblock %}
+
+{% block menu %}
+    <!--Sidebar content-->
+    <h2>Каталог</h2>
+
+    <div class="normal_size" onmouseover="document.getElementById('door').src='media/img/door_open1.jpg';"
+         onmouseout="document.getElementById('door').src='media/img/door1.jpg';">
+        <a href="catalog"><img id="door" src="media/img/door1.jpg" alt="Каталог дверей"></a>
+    </div>
+{% endblock menu %}
+
+{% block content %}
+    <h3>Почему люди предпочитают заказывать у нас?</h3>
+
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    Collapsible Group Item #1
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">
+                <div class="accordion-inner">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    Collapsible Group Item #2
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body in collapse" style="height: auto; ">
+                <div class="accordion-inner">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                    Collapsible Group Item #3
+                </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!--  <ul class="nav nav-tabs">
+        <li class=""><a href="#1" data-toggle="tab">Удобное расположение<br>и время работы</a></li>
+        <li class="active"><a href="#2" data-toggle="tab">Удобно выбирать</a></li>
+        <li class="active"><a href="#3" data-toggle="tab">Сами доставим, сами установим</a></li>
+        <li class="active"><a href="#4" data-toggle="tab">Сроки</a></li>
+        <li class="active"><a href="#5" data-toggle="tab"></a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#6" data-toggle="tab">Просто заказать</a></li>
+                <li><a href="#7" data-toggle="tab">Выгодные цены</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="1">
+            <p>Выставочный зал находится в самом центре города, в 50 метрах от м. Сенная. Мы работаем без обеда
+                и выходных, с 9:00 до 21:00.</p>
+        </div>
+        <div class="tab-pane fade" id="2">
+            <p>Мы сделали описания максимально подробными. Фотографии, размеры, комплектация, указаны для каждой
+                двери.</p>
+        </div>
+        <div class="tab-pane fade active in" id="3">
+            <p>Просто выберите понравившуюся вам дверь на сайте, а все проблемы по доставке, установке,
+                демонтажу старой двери мы берем на себя.</p>
+        </div>
+        <div class="tab-pane fade active in" id="4">
+            <p>В день заказа или на следующий рабочий день (пн-сб) мы производим замер, а через день производим
+                установку. <br>При необходимости, возможна срочная установка в день заказа.</p>
+        </div>
+        <div class="tab-pane fade active in" id="5"></div>
+        <div class="tab-pane fade" id="6">
+            <p>Закажите дверь удобным для Вас способом, позвоните по телефону в Альметьевске: <br>
+            8 (917) <b>246-46-09</b><br> 8 (917) <b>927-48-74</b> </p>
+        </div>
+        <div class="tab-pane fade" id="7">
+            <p>Мы продаем двери собственного производства, поэтому у нас нет наценок посредников. На сайте
+                указаны цены за двери в полной комплектации.</p>
+        </div>
+    </div>
+-->
+
+{% endblock content %}
