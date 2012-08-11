@@ -23,3 +23,15 @@
     margin: 0 0px 10px 0;
     border-bottom: 1px solid #8A8985;
 }
+
+.round_block {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: #ffffff;
+    border: white solid 1px;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    position: relative;
+    behavior: url(/css/PIE.htc);
+}

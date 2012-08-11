@@ -1,5 +1,20 @@
 {% extends 'basemodified.html' %}
 
+{% block after_slide %}
+    <div class="tabbable offset3">
+        <ul class="nav nav-tabs">
+            <li class="{% block active1 %}{% endblock %}"><a href="prise-enter">Входные двери</a>
+            </li>
+            <li class="{% block active2 %}{% endblock %}"><a href="prise-parade">Межкомнатные
+                двери</a></li>
+            <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice">Арки</a>
+            </li>
+            <li class="{% block active4 %}{% endblock %}"><a href="prise-anti-fire">Противопожарные</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
 {% block menu %}
     <ul class="nav nav-list">
         <li class="active"><a href="/"><i class="icon-white icon-home"></i> Home</a></li>
@@ -41,21 +56,11 @@
 {% endblock %}
 {% block content %}
     {% block up_content %}
-        <div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li class="{% block active1 %}{% endblock %}"><a href="prise-enter">Входные двери</a>
-                </li>
-                <li class="{% block active2 %}{% endblock %}"><a href="prise-parade">Межкомнатные
-                    двери</a></li>
-                <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice">Арки</a>
-            </li>
-                <li class="{% block active4 %}{% endblock %}"><a href="prise-anti-fire">Противопожарные</a>
-                </li>
-            </ul>
-        </div>
+
     {% endblock %}
 
 
     {% block prise_content %}
+
     {% endblock %}
 {% endblock %}
