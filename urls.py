@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^prise-enter$', direct_to_template, {'template': 'prise_enter.html'}),
     url(r'^prise-parade$', direct_to_template, {'template': 'prise_parade.html'}),
     url(r'^prise-lattice$', direct_to_template, {'template': 'prise_lattice.html'}),
+    url(r'^color', direct_to_template, {'template': 'color.html'}),
 
 )
 
