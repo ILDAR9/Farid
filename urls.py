@@ -12,7 +12,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^$', direct_to_template, {'template': 'home.html'}),
-    (r'^catalog$', direct_to_template, {'template': 'prise.html'})
+    (r'^catalog$', direct_to_template, {'template': 'catalog.html'}),
+    (r'^prise1$', direct_to_template, {'template': 'prise.html'}),
+
 )
 
 if settings.DEBUG:

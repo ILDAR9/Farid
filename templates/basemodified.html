@@ -13,59 +13,66 @@
 
 <body>
 <div class="container">
-    <div class="ugol span1">
-        <br><br>
-        <img src="media/img/logotipMINI.png" alt="Логотип">
+    {% block pre_slide %}
+    {% endblock %}
+    {% block slide %}
+        <div class="ugol span1">
+            <br><br>
+            <img src="media/img/logotipMINI.png" alt="Логотип">
 
-        <h1>Faridel</h1>
-    </div>
-    <div class="ugol offset9" style="color: #000000;">
-        <br><br>
-        <i>8(917)</i><strong>246-46-09</strong><br>
-        <i>8(917)</i><b>927-48-74</b>
-    </div>
-    <div id="myCarousel" class="carousel slide well">
-        <div class="carousel-inner">
-            <div class="item">
-                <img src="media/img/saver.jpg" alt="saver">
-
-                <div class="carousel-caption">
-                    <blockquote>
-                        <p>Лучшие двери России для вас!!!</p>
-                        <small>Хаметов Фарид: директор магазина</small>
-                    </blockquote>
-                </div>
-            </div>
-            <div class="item active">
-                <img src="media/img/saver2.jpg" alt="saver2">
-
-                <div class="carousel-caption">
-                    <blockquote>
-                        <p>Сами доставим, сами установим!!!</p>
-                        <small>Хаметов Фарид: директор магазина</small>
-                    </blockquote>
-                </div>
-            </div>
-            <div class="item">
-                <img src="media/img/saver3.jpg" alt="saver3">
-
-                <div class="carousel-caption">
-                    <blockquote>
-                        <p>Сделайте свой дом уютней и безопасней.</p>
-                        <small>Хаметов Фарид: директор магазина</small>
-                    </blockquote>
-                </div>
-            </div>
+            <h1>Faridel</h1>
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    </div>
+        <div class="ugol offset9" style="color: #000000;">
+            <br><br>
+            <i>8 (917) </i><strong>246-46-09</strong><br>
+            <i>8 (917) </i><b>927-48-74</b>
+        </div>
+        <div id="myCarousel" class="carousel slide well">
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="media/img/saver.jpg" alt="saver">
 
+                    <div class="carousel-caption">
+                        <blockquote>
+                            <p>Лучшие двери России для вас!!!</p>
+                            <small>Хаметов Фарид: директор магазина</small>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="media/img/saver2.jpg" alt="saver2">
+
+                    <div class="carousel-caption">
+                        <blockquote>
+                            <p>Сами доставим, сами установим!!!</p>
+                            <small>Хаметов Фарид: директор магазина</small>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="media/img/saver3.jpg" alt="saver3">
+
+                    <div class="carousel-caption">
+                        <blockquote>
+                            <p>Сделайте свой дом уютней и безопасней.</p>
+                            <small>Хаметов Фарид: директор магазина</small>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
+    {% endblock %}
     <div class="row-fluid">
-        <div class="span2 well">
+
+
+        <div class="well span2">
             {% block menu %}
+
             {% endblock menu %}
         </div>
+
 
         <div class="span10 well">
             <!--Body content-->

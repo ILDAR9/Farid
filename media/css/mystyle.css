@@ -13,3 +13,13 @@
 .slide_height{
     height: 300px;
 }
+
+.block_head {
+    width: 600px;
+    float: left;
+    color: #010101;
+    font: italic 17px arial;
+    padding: 0 0 3px;
+    margin: 0 0px 10px 0;
+    border-bottom: 1px solid #8A8985;
+}
