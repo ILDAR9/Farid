@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^prise-parade$', direct_to_template, {'template': 'prise_parade.html'}),
     url(r'^prise-lattice$', direct_to_template, {'template': 'prise_lattice.html'}),
     url(r'^prise-anti-fire$', direct_to_template, {'template': 'prise_anti_fire.html'}),
-    url(r'^color$', direct_to_template, {'template': 'color.html'}),
+    url(r'^color$', direct_to_template, {'template': 'indoorPanels.html'}),
     url(r'^test$', direct_to_template, {'template': 'test.html'}),
 
 
