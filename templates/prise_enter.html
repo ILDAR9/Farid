@@ -6,7 +6,7 @@
 {% block active1 %}active{% endblock %}
 
 {% block prise_content %}
-
+    <!-- content menu -->
     <ul id="myTab" class="nav nav-tabs">
         <li class="dropdown">
             <a style="color: red;" href="#" class="dropdown-toggle" data-toggle="dropdown" rel="popover"
@@ -21,7 +21,7 @@
         <li class=""><a href="#construction" data-toggle="tab">Конструкция<br>двери</a></li>
 
     </ul>
-
+    <!-- menu's answer -->
     <div id="myTabContent" class="tab-content">
         <!-- Special offers -->
         <div class="tab-pane fade" id="complect">
@@ -30,26 +30,27 @@
         <div class="tab-pane fade" id="cheap">
             <img src="../media/img/prise/prise_7500.jpg" alt="cheap">
         </div>
+
         <!-- How to check metal door -->
         <div class="tab-pane fade active in" id="home">
             <img class="pull-right" src="../media/img/prise/steeldoors.png">
 
-            <div class="navbar navbar-static">
+            <div id="advices" class="navbar navbar-static">
                 <div class="navbar-inner">
                     <div class="container" style="width: auto;">
                         <a class="brand" href="#">Стальные двери:</a>
                         <ul class="nav">
-                            <li class="active"><a href="#how_to_check">Как выбрать?</a></li>
-                            <li><a href="#mean_cheak">Выбирая, важно знать.</a></li>
-                            <li><a href="#presence">Внешняя отделка</a></li>
-                            <li><a href="#metal_presence">Металлические двери с отделкой</a></li>
-                            <li><a href="#lock">Замок</a></li>
+                            <li class="active"><a href="#how_to_check">@Как выбрать?</a></li>
+                            <li><a href="#mean_cheak">@Выбирая, <br> важно знать.</a></li>
+                            <li><a href="#presence">@Внешняя отделка</a></li>
+                            <li><a href="#metal_presence">@Металлические двери <br>с отделкой</a></li>
+                            <li><a href="#lock">@Замок</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div data-spy="scroll" data-target="#advices" data-offset="0" class="sc">
+            <div data-spy="scroll" data-target="#advices" data-offset="0" class="scrollspy-example">
 
                 <h4 id="how_to_check">Как выбрать металлическую дверь?</h4>
 
@@ -121,36 +122,39 @@
                     обеспечить безопасность Вашего жилья или офиса.</p>
 
             </div>
-            <!-- Door's contruction -->
-            <div class="tab-pane fade" id="construction">
-                <div style="float: left;">
-                    <img alt="Конструкция двери" src="../media/img/prise/shema_dveri.jpg" width="317" height="580">
-                </div>
-                <div style="display: block; font-size: 14px; line-height: 17px;">
-                    1 - дверная коробка<br>
-                    2 - установочный штырь (6 шт.)<br>
-                    3 - ребра жесткости<br>
-                    4 - внутренняя панель<br>
-                    5 - противосъемный штырь (3 шт.)<br>
-                    6 - уплотнитель на дверном полотне (дополнительно по коробу)<br>
-                    7 - глазок<br>
-                    8 - отделочный уголок<br>
-                    9 - дверное полотно<br>
-                    10 - ригель вертикального запирания (2 шт.)<br>
-                    11 - задвижка<br>
-                    12 - замок с ручкой<br>
-                    13 - утеплитель<br>
-                    14 - внутренний лист металла*<br><br>
+        </div>
 
-                    * - по заказу клиента<br><br><br>
+        <!-- Door's contruction -->
+        <div class="tab-pane fade" id="construction">
+            <div style="float: left;">
+                <img alt="Конструкция двери" src="../media/img/prise/shema_dveri.jpg" width="317" height="580">
+            </div>
+            <div style="display: block; font-size: 14px; line-height: 17px;">
+                1 - дверная коробка<br>
+                2 - установочный штырь (6 шт.)<br>
+                3 - ребра жесткости<br>
+                4 - внутренняя панель<br>
+                5 - противосъемный штырь (3 шт.)<br>
+                6 - уплотнитель на дверном полотне (дополнительно по коробу)<br>
+                7 - глазок<br>
+                8 - отделочный уголок<br>
+                9 - дверное полотно<br>
+                10 - ригель вертикального запирания (2 шт.)<br>
+                11 - задвижка<br>
+                12 - замок с ручкой<br>
+                13 - утеплитель<br>
+                14 - внутренний лист металла*<br><br>
 
-                    В зависимости от числа полотен двeри могут быть однопольными или двупольными. Число полотен, как
-                    правило, определяется шириной проема в стене. Однопольные двери рекомендуется устанавливать по
-                    ширине
-                    проема не более 1030 мм. Если ширина дверного проема больше, рекомендуется неподвижная полка или
-                    вторая
-                    отворяющаяся часть двери. При высоте дверного проема более 2400 мм рекомендуется установка фрамуги.
-                </div>
+                * - по заказу клиента<br><br><br>
+
+                В зависимости от числа полотен двeри могут быть однопольными или двупольными. Число полотен, как
+                правило, определяется шириной проема в стене. Однопольные двери рекомендуется устанавливать по
+                ширине
+                проема не более 1030 мм. Если ширина дверного проема больше, рекомендуется неподвижная полка или
+                вторая
+                отворяющаяся часть двери. При высоте дверного проема более 2400 мм рекомендуется установка фрамуги.
             </div>
         </div>
+
+    </div>
 {% endblock %}
