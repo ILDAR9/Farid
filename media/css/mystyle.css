@@ -35,3 +35,9 @@
     position: relative;
     behavior: url(/css/PIE.htc);
 }
+
+.scrollspy-example {
+    height: 200px;
+    overflow: auto;
+    position: relative;
+}

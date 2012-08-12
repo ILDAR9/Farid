@@ -16,18 +16,22 @@
 <div class="container">
     {% block pre_slide %}
     {% endblock %}
+
     {% block slide %}
+        <!-- Logo -->
         <div class="ugol span1">
             <br><br>
             <img src="../media/img/logotipMINI.png" alt="Логотип">
 
             <h1>Faridel</h1>
         </div>
+        <!-- Telephone -->
         <div class="ugol offset9" style="color: #000000;">
             <br><br>
             <i>8 (917) </i><strong>246-46-09</strong><br>
             <i>8 (917) </i><b>927-48-74</b>
         </div>
+        <!-- Screenshots slider -->
         <div id="myCarousel" class="carousel slide well">
             <div class="carousel-inner">
                 <div class="item">
@@ -65,8 +69,10 @@
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
         </div>
     {% endblock %}
+    <div class="well-small" id="stop_here">
     {% block after_slide %}
     {% endblock %}
+    </div>
     <div class="row-fluid">
 
 
