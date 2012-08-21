@@ -1,16 +1,15 @@
 {% extends 'basemodified.html' %}
 
 {% block after_slide %}
-
-    <div class="tabbable offset3">
-        <ul class="nav nav-tabs">
-            <li class="{% block active1 %}{% endblock %}"><a href="prise-enter#stop_here">Входные двери</a>
+    <div class="offset2 span10">
+        <ul class="nav nav-tabs span 6">
+            <li class="{% block active1 %}{% endblock %}"><a href="prise-enter#content">Входные двери</a>
             </li>
-            <li class="{% block active2 %}{% endblock %}"><a href="prise-parade">Межкомнатные
+            <li class="{% block active2 %}{% endblock %}"><a href="prise-parade#content">Межкомнатные
                 двери</a></li>
-            <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice">Арки</a>
+            <li class="{% block active3 %}{% endblock %}"><a href="prise-lattice#content">Арки</a>
             </li>
-            <li class="{% block active4 %}{% endblock %}"><a href="prise-anti-fire">Противопожарные</a>
+            <li class="{% block active4 %}{% endblock %}"><a href="prise-anti-fire#content">Противопожарные</a>
             </li>
         </ul>
     </div>
@@ -20,12 +19,22 @@
     <ul class="nav nav-list">
         <li class="active"><a href="/"><i class="icon-white icon-home"></i> Home</a></li>
         <li class="divider"></li>
-        <li><a href="color">Цветовая гамма <i class="icon-pencil"></i></a></li>
+        <li><a href="color#content" class="well">внутренняя отделка двери<span style="padding: 0px 5px;">&nbsp;</span><i class="icon-pencil"></i></a></li>
         <li class="divider"></li>
-        <li><a data-toggle="modal" href="#myModal">Контактные данные</a></li>
+        <li><a data-toggle="modal" href="#myModal" class="well">Контактные данные</a></li>
     </ul>
 
-    <div id="myModal" class="modal hide fade" style="display: block; ">
+
+{% endblock %}
+{% block content %}
+    {% block up_content %}
+
+    {% endblock %}
+
+    {% block prise_content %}
+
+    {% endblock %}
+    <div id="myModal" class="modal hide fade">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">×</button>
             <h3>Контактные данные</h3>
@@ -54,14 +63,4 @@
             <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
         </div>
     </div>
-{% endblock %}
-{% block content %}
-    {% block up_content %}
-
-    {% endblock %}
-
-
-    {% block prise_content %}
-
-    {% endblock %}
 {% endblock %}

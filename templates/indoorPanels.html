@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="../media/css/intdoor.css">
     <link rel="stylesheet" href="../media/css/jquery.fancybox-1.3.4.css">
 {% endblock %}
+{% block script %}
+    <script type="text/javascript" src="../media/js/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.intdoor").fancybox({
+                'transitionIn':'elastic',
+                'transitionOut':'elastic',
+                'speedIn':600,
+                'speedOut':200,
+                'hideOnContentClick':true
+            });
+        });
+    </script>
+{% endblock %}
 {% block prise_content %}
     <ul id="myTab" class="nav nav-tabs">
         <li class="active"><a href="#panel" data-toggle="tab">Панели МДФ</a></li>
@@ -277,26 +291,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-{% endblock %}
-
-{% block script %}
-    <script type="text/javascript" src="../media/js/jquery.fancybox-1.3.4.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("a.intdoor").fancybox({
-                'transitionIn':'elastic',
-                'transitionOut':'elastic',
-                'speedIn':600,
-                'speedOut':200,
-                'hideOnContentClick':true
-            });
-        });
-    </script>
 {% endblock %}

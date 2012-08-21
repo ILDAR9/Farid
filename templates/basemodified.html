@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../media/css/mystyle.css">
     {% block style_lib %}{% endblock %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    <script src="../media/js/jquery.js"></script>
+    {% block script  %}
+    {% endblock %}
 </head>
 
 <body>
@@ -68,7 +70,7 @@
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
         </div>
     {% endblock %}
-    <div class="well-small" id="stop_here">
+    <div class="well-small" id="content">
     {% block after_slide %}
     {% endblock %}
     </div>
@@ -90,7 +92,6 @@
     </div>
 </div>
 <script src="../media/js/widgets.js"></script>
-<script src="../media/js/jquery.js"></script>
 <script src="../media/js/bootstrap-transition.js"></script>
 <script src="../media/js/bootstrap-alert.js"></script>
 <script src="../media/js/bootstrap-modal.js"></script>
@@ -104,8 +105,6 @@
 <script src="../media/js/bootstrap-carousel.js"></script>
 <script src="../media/js/bootstrap-typeahead.js"></script>
 <script src="../media/js/application.js"></script>
-{% block script %}
-{% endblock %}
 
 </body>
 
