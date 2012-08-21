@@ -1,6 +1,6 @@
-{% extends 'basecatalog.html' %}
+{% extends 'basesteeldoors.html' %}
 {% block title %}
-    Цветовая гамма дверей
+    Внутренняя отделка двери
 {% endblock %}
 {% block style_lib %}
     <link rel="stylesheet" href="../media/css/intdoor.css">
@@ -19,6 +19,9 @@
             });
         });
     </script>
+{% endblock %}
+{% block menu_active1 %}
+active
 {% endblock %}
 {% block prise_content %}
     <ul id="myTab" class="nav nav-tabs">

@@ -1,73 +1,46 @@
-{% extends 'basecatalog.html' %}
+{% extends 'basesteeldoors.html' %}
 {% block title %}
     Цветовая гамма дверей
 {% endblock %}
+{% block style_lib %}
+    <link rel="stylesheet" href="../media/css/intdoor.css">
+    <link rel="stylesheet" href="../media/css/jquery.fancybox-1.3.4.css">
+{% endblock %}
+{% block script %}
+    <script type="text/javascript" src="../media/js/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.intdoor").fancybox({
+                'transitionIn':'elastic',
+                'transitionOut':'elastic',
+                'speedIn':600,
+                'speedOut':200,
+                'hideOnContentClick':true
+            });
+        });
+    </script>
+{% endblock %}
+{% block menu_active2 %}
+active
+{% endblock %}
 {% block prise_content %}
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>#</th>
-            <th>Цвет:</th>
-            <th>наименование:</th>
-            <th>Код:</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td colspan="4" align="center" height="40">ЛАМИНИРОВАННЫЕ ДВЕРИ</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><img src="../media/img/ital oreh.gif"></td>
-            <td>ИТАЛЬЯНСКИЙ ОРЕХ</td>
-            <td>126</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><img src="../media/img/milan oreh.gif"></td>
-            <td>МИЛАНСКИЙ ОРЕХ</td>
-            <td>127</td>
-        </tr>
-        <tr>
-            <td colspan="4" align="center" height="40">ШПОНИРОВАННЫЕ ДВЕРИ</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><img src="../media/img/buk new.gif"></td>
-            <td>БУК</td>
-            <td>128</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><img src="../media/img/dub natural.gif"></td>
-            <td>ДУБ НАТУРАЛЬНЫЙ</td>
-            <td>129</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td><img src="../media/img/oreh temn1.gif"></td>
-            <td>ОРЕХ ТЕМНЫЙ</td>
-            <td>130</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td><img src="../media/img/oreh svetl1.gif"></td>
-            <td>ОРЕХ СВЕТЛЫЙ</td>
-            <td>131</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td><img src="../media/img/venge.gif"></td>
-            <td>ВЕНГЕ</td>
-            <td>132</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td><img src="../media/img/krasn derevo1.gif"></td>
-            <td>КРАСНОЕ ДЕРЕВО</td>
-            <td>133</td>
-        </tr>
 
-        </tbody>
-    </table>
+    <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="panel"><!-- Panels -->
+        <h2 align="center">Палитра цветов порошковой окраски</h2>
+        <br><br>
+        <div style="padding-left: 40px;">
+            <a rel="palitra" class="intdoor" title="синяя матовая шагрень" href="../media/indoorVariants/palitra/01.jpg"><img alt="синяя матовая шагрень" src="../media/indoorVariants/palitra/min/01.jpg"></a>
+            <a rel="palitra" class="intdoor" title="зеленая матовая шагрень" href="../media/indoorVariants/palitra/02.jpg"><img alt="зеленая матовая шагрень" src="../media/indoorVariants/palitra/min/02.jpg"></a>
+            <a rel="palitra" class="intdoor" title="коричневая матовая шагрень" href="../media/indoorVariants/palitra/03.jpg"><img alt="коричневая матовая шагрень" src="../media/indoorVariants/palitra/min/03.jpg"></a>
+            <a rel="palitra" class="intdoor" title="светло-серая матовая шагрень" href="../media/indoorVariants/palitra/04.jpg"><img alt="светло-серая матовая шагрень" src="../media/indoorVariants/palitra/min/04.jpg"></a>
+            <a rel="palitra" class="intdoor" title="серая матовая шагрень" href="../media/indoorVariants/palitra/05.jpg"><img alt="серая матовая шагрень" src="../media/indoorVariants/palitra/min/05.jpg"></a>
+            <a rel="palitra" class="intdoor" title="зеленый" href="../media/indoorVariants/palitra/06.jpg"><img alt="зеленый" src="../media/indoorVariants/palitra/min/06.jpg"></a>
+            <a rel="palitra" class="intdoor" title="золото" href="../media/indoorVariants/palitra/07.jpg"><img alt="золото" src="../media/indoorVariants/palitra/min/07.jpg"></a>
+            <a rel="palitra" class="intdoor" title="медь" href="../media/indoorVariants/palitra/08.jpg"><img alt="медь" src="../media/indoorVariants/palitra/min/08.jpg"></a>
+            <a rel="palitra" class="intdoor" title="серебристый" href="../media/indoorVariants/palitra/09.jpg"><img alt="серебристый" src="../media/indoorVariants/palitra/min/09.jpg"></a>
+            <a rel="palitra" class="intdoor" title="синий" href="../media/indoorVariants/palitra/10.jpg"><img alt="синий" src="../media/indoorVariants/palitra/min/10.jpg"></a>
+        </div>
+
+    </div>
 {% endblock %}
