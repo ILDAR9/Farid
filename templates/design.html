@@ -1,0 +1,166 @@
+{% extends 'basesteeldoors.html' %}
+{% block title %}
+    Цветовая гамма дверей
+{% endblock %}
+{% block style_lib %}
+    <link rel="stylesheet" href="../media/css/intdoor.css">
+    <link rel="stylesheet" href="../media/css/jquery.fancybox-1.3.4.css">
+    <style type="text/css">
+        i {
+            float: right;
+        }
+
+        div.doorart-doors {
+            top: 30px;
+            left: 0;
+            position: relative;
+            margin-left: 20px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+{% block script %}
+    <script type="text/javascript" src="../media/js/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.intdoor").fancybox({
+                'transitionIn':'elastic',
+                'transitionOut':'elastic',
+                'speedIn':600,
+                'speedOut':200,
+                'hideOnContentClick':true
+            });
+        });
+    </script>
+{% endblock %}
+{% block menu_active3 %}
+    active
+{% endblock %}
+{% block prise_content %}
+    <h2 style="text-align: center;">Стальные двери <br> с элементами художественной ковки</h2>
+    <div class="span3 sidebar">
+        <ul class="nav nav-tabs mysidebar" id="myTab">
+            <table class="table">
+                <tbody>
+                <tr class="">
+                    <td><a href="#vine"><i class="icon-chevron-right pull-right"></i> виноградная лоза</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#double_leaf"><i class="icon-chevron-right"></i> двустворчатые</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#optima"><i class="icon-chevron-right"></i> оптима</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#retro"><i class="icon-chevron-right"></i> ретро</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#roman_style"><i class="icon-chevron-right"></i> римский стиль</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#russian_lawn"><i class="icon-chevron-right"></i> русская лужайка</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#russian_no_witrage"><i class="icon-chevron-right"></i> русское оконце<br>без
+                        витража</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#russian_witrage"><i class="icon-chevron-right"></i> русское оконце<br>с витражом</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#russian_field"><i class="icon-chevron-right"></i> русское поле</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#special"><i class="icon-chevron-right"></i> спецзаказ</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#hitech"><i class="icon-chevron-right"></i> хайтек</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#eclectick"><i class="icon-chevron-right"></i> эклектика</a></td>
+                </tr>
+                <tr class="active">
+                    <td><a href="#elite"><i class="icon-chevron-right"></i> элитные</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </ul>
+    </div>
+
+    <div class="span8 pull_right tab-content" id="myTabContent">
+
+        <div class="doorart-doors tab-pane fade active in" id="text">
+            <p><strong>Для удобства выбора варианта оформления элементами художественной ковки стальные
+                двери разделены по стилю и по группам.</strong></p>
+
+            <p>Художественная ковка для стальной двери становится обязательным атрибутом –
+                украшая ее замысловатыми коваными кружевами, вы тем самым подчеркиваете вкус и
+                привязанности хозяина квартиры или коттеджа.</p>
+
+            <p>Такая дверь может служить украшением офиса или банка, придаст солидность и
+                подтвердит статус фирмы.</p>
+
+            <p>Наша компания предлагает более 120 видов отделки двери с применением различных
+                элементов художественной ковки на любой, самый изысканный вкус.</p>
+
+            <p>А для самых требовательных клиентов мы можем предложить разработку
+                индивидуального дизайна отделки двери с учетом личных пожеланий и предпочтений
+                заказчика. Такая дверь будет выполнена в единственном экземпляре и сделает вас
+                обладателем уникального произведения искусства ковки.</p>
+
+            <p>Элементы художественной ковки могут окрашиваться:</p>
+
+            <p>- в цвет двери;</p>
+
+            <p>- в черный цвет с последующей патинировкой под – золото, медь, бронзу и серебро,
+                тем самым придавая законченный вид и своеобразный шарм.</p>
+
+            <p>Если у Вас уже есть стальная дверь, её унылую плоскость можно "оживить". На любую
+                окрашенную дверь можно смонтировать кованый элемент, цвет которого определит наш
+                дизайнер. Любой домашний мастер сможет смонтировать эту красоту за считанные
+                минуты, следуя нашим рекомендациям.</p>
+
+            <p>А теперь информация для предприятий - производителей стальных дверей, не имеющих
+                возможности заниматься ковкой! Принимаем заказы на поставку наших элементов
+                художественной ковки от 10 штук одного наименования по оптовым ценам.</p>
+        </div>
+
+            <div class="doorart-doors tab-pane fade" id="vine">
+                <a rel="doors1" class="intdoor" title="vloza1" href="../media/indoorVariants/doorart/vine/vloza1.jpg"><img alt="vloza1" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza1.jpg"></a>
+                <a rel="doors1" class="intdoor " style="padding-right: 20px;" title="vloza2" href="../media/indoorVariants/doorart/vine/vloza2.jpg"><img alt="vloza2" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza2.jpg"></a>
+                <a rel="doors1" class="intdoor " title="vloza3" href="../media/indoorVariants/doorart/vine/vloza3.jpg"><img alt="vloza3" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza3.jpg"></a>
+                <a rel="doors1" class="intdoor " style="padding-right: 20px;" title="vloza4" href="../media/indoorVariants/doorart/vine/vloza4.jpg"><img alt="vloza4" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza4.jpg"></a>
+                <a rel="doors1" class="intdoor " title="vloza5" href="../media/indoorVariants/doorart/vine/vloza5.jpg"><img alt="vloza5" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza5.jpg"></a>
+                <a rel="doors1" class="intdoor " style="padding-right: 20px;" title="vloza6" href="../media/indoorVariants/doorart/vine/vloza6.jpg"><img alt="vloza6" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza6.jpg"></a>
+                <a rel="doors1" class="intdoor " title="vloza7" href="../media/indoorVariants/doorart/vine/vloza7.jpg"><img alt="vloza7" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza7.jpg"></a>
+                <a rel="doors1" class="intdoor " style="padding-right: 20px;" title="vloza8" href="../media/indoorVariants/doorart/vine/vloza8.jpg"><img alt="vloza8" height="170" width="83" src="../media/indoorVariants/doorart/vine/min/vloza8.jpg"></a>
+            </div>
+
+        <div id="double_leaf"></div>
+
+        <div id="optima"></div>
+
+        <div id="retro"></div>
+
+        <div id="roman_style"></div>
+
+        <div id="russian_lawn"></div>
+
+        <div id="russian_no_witrage"></div>
+
+        <div id="russian_witrage"></div>
+
+        <div id="russian_field"></div>
+
+        <div id="special"></div>
+
+        <div id="hitech"></div>
+
+        <div id="eclectick"></div>
+
+        <div id="elite"></div>
+
+    </div>
+
+{% endblock %}

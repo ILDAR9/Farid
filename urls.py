@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'^prise-anti-fire$', direct_to_template, {'template': 'prise_anti_fire.html'}),
     url(r'^furnish$', direct_to_template, {'template': 'furnish.html'}),
     url(r'^color$', direct_to_template, {'template': 'color.html'}),
+    url(r'^design', direct_to_template, {'template': 'design.html'}),
     url(r'^test$', direct_to_template, {'template': 'test.html'}),
 
 
