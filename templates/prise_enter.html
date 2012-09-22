@@ -1,11 +1,14 @@
 {% extends 'basesteeldoors.html' %}
-
+{% block script %}
+    <script src="../media/js/jquery.js"></script>
+{% endblock %}
 {% block prise_content %}
     <!-- content menu -->
     <ul id="myTab" class="nav nav-tabs">
         <li class="dropdown">
             <a style="color: red;" href="#" class="dropdown-toggle" data-toggle="dropdown" rel="popover"
-               data-content="Очень заманчивое предложение!" data-original-title="ТОРОПИТЕСЬ!!!">Специальное<br>предложение:
+               title="                  ТОРОПИТЕСЬ!!!
+Очень заманчивое предложение!">Специальное<br>предложение:
                 <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a href="#complect" data-toggle="tab">Комплектация</a></li>
@@ -20,10 +23,59 @@
     <div id="myTabContent" class="tab-content">
         <!-- Special offers -->
         <div class="tab-pane fade" id="complect">
-            <img src="../media/img/prise/enterDoors.bmp" alt="optom">
+            <img src="../media/img/prise/enterDoors.jpg" alt="optom">
         </div>
         <div class="tab-pane fade" id="cheap">
-            <img src="../media/img/prise/prise_7500.jpg" alt="cheap">
+            <img src="../media/img/prise/prise_7500_limited.jpg" alt="cheap">
+            <center>
+                <p>
+                    Коробка из гнутого профиля КЗ с четвертью (установка сквозь коробку),<br/>
+                    металл t=l,5 мм, один контур уплотнения.</p>
+
+                <p>Ширина обналички 43 мм<br/>
+                    Толщина двери 50 мм<br/>
+                    Наружный лист металла t=l,2 мм<br/>
+                    Сотовый наполнитель представляет собой прессованный картон, которым в процессе<br/>
+                    производства заполняют пустоту внутри двери.<br/>
+                    Внутренняя отделка: эконом-панель ламинированная (ЭПЛ) толщиной 3 мм<br/>
+                    Возможна установка:</p>
+
+                <h4>Комплектация №1</h4>
+
+                <table style="background: #7fff00">
+                    <tr>
+                        <td>-с одним замком<br>
+                            Апекс (цилиндровый)
+                        </td>
+                        <td>
+                            <h1>7500 руб.</h1>
+                        </td>
+                    </tr>
+                </table>
+
+                <h4>Комплектация №2</h4>
+
+                <table style="background: #7fff00">
+                    <tr>
+                        <td>-с двумя замками<br>
+                            Апекс2800 (цилиндровый<br>3B8-6/13 с накладками
+                        </td>
+                        <td>
+                            <h1>8200 руб.</h1>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <p>Ручка Solid<br/>
+                    Цилиндровый механизм ключ-ключ простой (3 ключа)<br/>
+                    Глазок<br/>
+                    Порошково-полимерное покрытие: медный антик.<br/>
+                    Крепление через коробку (6 заглушек диаметром 25 мм в комплекте).<br/>
+                    При заказе двери возможен выбор: цвета покраски, панели, ручки, цилиндра, задвижки.</p>
+
+                <p>Размеры двери: 870<em>*</em>2050, 970*2050.</p>
+            </center>
         </div>
 
         <!-- How to check metal door -->
@@ -47,7 +99,7 @@
 
             <div data-spy="scroll" data-target="#advices" data-offset="0" class="scrollspy-example">
                 <div class="round_block" id="how_to_check">
-                    <h4 >Как выбрать металлическую дверь?</h4>
+                    <h4>Как выбрать металлическую дверь?</h4>
 
                     <p><span style="padding: 0px 10px;">&nbsp;</span>
                         Действительно, как? – ведь выбирая металлическую дверь, Вы, прежде всего, представляете ее
@@ -148,7 +200,8 @@
 
                 * - по заказу клиента<br><br><br>
 
-                <span style="padding: 0px 10px;">&nbsp;</span>В зависимости от числа полотен двeри могут быть однопольными или двупольными. Число полотен, как
+                <span style="padding: 0px 10px;">&nbsp;</span>В зависимости от числа полотен двeри могут быть
+                однопольными или двупольными. Число полотен, как
                 правило, определяется шириной проема в стене. Однопольные двери рекомендуется устанавливать по
                 ширине
                 проема не более 1030 мм. Если ширина дверного проема больше, рекомендуется неподвижная полка или
